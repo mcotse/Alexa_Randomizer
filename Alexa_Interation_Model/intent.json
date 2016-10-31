@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "intent": "ChooseName",
+      "slots": [
+        {
+          "name": "Name_one",
+          "type": "LIST_OF_NAMES"
+        },
+        {
+          "name": "Name_two",
+          "type": "LIST_OF_NAMES"
+        },
+        {
+          "name": "Name_three",
+          "type": "LIST_OF_NAMES"
+        }
+      ]
+    },
+    {
+      "intent": "ChooseNumber",
+      "slots":[
+        {
+          "name": "Min",
+          "type": "LIST_OF_NUMBERS"
+        },
+        {
+          "name": "Max",
+          "type": "LIST_OF_NUMBERS"
+        }
+      ]
+    }
+  ]
+}
