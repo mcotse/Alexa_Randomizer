@@ -6,7 +6,7 @@
         {
           "name": "Name_one",
           "type": "LIST_OF_NAMES"
-        },
+        }
         {
           "name": "Name_two",
           "type": "LIST_OF_NAMES"
