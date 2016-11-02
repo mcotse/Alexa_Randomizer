@@ -1,4 +1,3 @@
-ChooseName Who should shower first
 ChooseName Should {Name_one} or {Name_two} shower first
 ChooseName if {Name_one} or {Name_two} should shower first
 ChooseName Who should shower first {Name_one} or {Name_two}
@@ -19,9 +18,28 @@ ChooseName Who should go to super eighty eight {Name_one} {Name_two} {Name_three
 ChooseName pick a name {Name_one} {Name_two} {Name_three} or {Name_four}
 ChooseName pick a name {Name_one} {Name_two} or {Name_three}
 ChooseName pick a name {Name_one} or {Name_two}
+ChooseName pick a name {Name_one} {Name_two} {Name_three} and {Name_four}
+ChooseName pick a name {Name_one} {Name_two} and {Name_three}
+ChooseName pick a name {Name_one} and {Name_two}
 ChooseName pick a name between {Name_one} {Name_two} {Name_three} or {Name_four}
 ChooseName pick a name between {Name_one} {Name_two} or {Name_three}
 ChooseName pick a name between {Name_one} or {Name_two}
+ChooseName pick a name between {Name_one} {Name_two} {Name_three} and {Name_four}
+ChooseName pick a name between {Name_one} {Name_two} and {Name_three}
+ChooseName pick a name between {Name_one} and {Name_two}
+ChooseName to pick a name {Name_one} {Name_two} {Name_three} or {Name_four}
+ChooseName to pick a name {Name_one} {Name_two} or {Name_three}
+ChooseName to pick a name {Name_one} or {Name_two}
+ChooseName to pick a name {Name_one} {Name_two} {Name_three} and {Name_four}
+ChooseName to pick a name {Name_one} {Name_two} and {Name_three}
+ChooseName to pick a name {Name_one} and {Name_two}
+ChooseName to pick a name between {Name_one} {Name_two} {Name_three} or {Name_four}
+ChooseName to pick a name between {Name_one} {Name_two} or {Name_three}
+ChooseName to pick a name between {Name_one} or {Name_two}
+ChooseName to pick a name between {Name_one} {Name_two} {Name_three} and {Name_four}
+ChooseName to pick a name between {Name_one} {Name_two} and {Name_three}
+ChooseName to pick a name between {Name_one} and {Name_two}
+
 ChooseNumber pick a number between {Num_one} and {Num_two}
 ChooseNumber pick a number from {Num_one} and {Num_two}
 ChooseNumber choose a number between {Num_one} and {Num_two}
