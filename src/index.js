@@ -65,7 +65,7 @@ Chooser.prototype.intentHandlers = {
         response.tellWithCard(randomNum.toString());
     },
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("Give me some names and I'll decide who wins!");
+        response.ask("Give me some names or a range of numbers and I will choose one at random");
     }
 };
 
