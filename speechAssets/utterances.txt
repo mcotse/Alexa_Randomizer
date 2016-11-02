@@ -22,3 +22,11 @@ ChooseName pick a name {Name_one} or {Name_two}
 ChooseName pick a name between {Name_one} {Name_two} {Name_three} or {Name_four}
 ChooseName pick a name between {Name_one} {Name_two} or {Name_three}
 ChooseName pick a name between {Name_one} or {Name_two}
+ChooseNumber pick a number between {Num_one} and {Num_two}
+ChooseNumber pick a number from {Num_one} and {Num_two}
+ChooseNumber choose a number between {Num_one} and {Num_two}
+ChooseNumber choose a number from {Num_one} and {Num_two}
+ChooseNumber to pick a number between {Num_one} and {Num_two}
+ChooseNumber to pick a number from {Num_one} and {Num_two}
+ChooseNumber to choose a number between {Num_one} and {Num_two}
+ChooseNumber to choose a number from {Num_one} and {Num_two}

@@ -52,6 +52,18 @@ Chooser.prototype.intentHandlers = {
         var randomIndex = Math.floor(Math.random() * names.length)
         response.tellWithCard(names[randomIndex]);
     },
+    "ChooseNumber": function (intent, session, response) {
+        var min, max;
+        if("value" in intent.slots.Num_one && "value" in intent.slots.Num_two){
+            min = Math.min(intent.slots.Num_one.value,intent.slots.Num_two.value);
+            max = Math.max(intent.slots.Num_one.value,intent.slots.Num_two.value);
+        }else{
+            response.ask("I cant work with what you just gave me, try asking again with another range","Ask again")
+        }
+        //generate random number in the given range
+        var randomNum = Math.floor(Math.random()*(max-min+1))+min;
+        response.tellWithCard(randomNum.toString());
+    },
     "AMAZON.HelpIntent": function (intent, session, response) {
         response.ask("Give me some names and I'll decide who wins!");
     }
