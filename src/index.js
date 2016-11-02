@@ -26,8 +26,8 @@ Chooser.prototype.eventHandlers.onSessionStarted = function (sessionStartedReque
 
 Chooser.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
     console.log("Chooser onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
-    var speechOutput = "Welcome to the Alexa Skills Kit, you can say hello";
-    var repromptText = "You can say hello";
+    var speechOutput = "Welcome to Randomizer, Give me a few names to choose from and i will choose one at random";
+    var repromptText = "Give me some names";
     response.ask(speechOutput, repromptText);
 };
 
