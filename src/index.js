@@ -40,17 +40,14 @@ Chooser.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, 
 Chooser.prototype.intentHandlers = {
     // register custom intent handlers
     "ChooseName": function (intent, session, response) {
-        var winnerRes;
         var names = [];
         for (var name in intent.slots){
             if("value" in intent.slots[name]){
                 names.push(intent.slots[name].value);
             }
         }
-        //default to anthony and matt if none provided
         if (names.length == 0){
-            names.push("matthew");
-            names.push("anthony");
+            response.ask("There were no names given, ask again","Ask again")
         }
         var randomIndex = Math.floor(Math.random() * names.length)
         response.tellWithCard(names[randomIndex]);
