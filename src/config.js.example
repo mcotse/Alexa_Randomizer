@@ -1,0 +1,4 @@
+var config = {
+  "APP_ID":"amzn1.ask.skill.be07a537-e3c5-4266-86a9-c9bc681cf1c4"
+}
+module.exports = config

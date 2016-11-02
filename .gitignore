@@ -1,1 +1,3 @@
-conf.json
+config.js
+*.zip
+.DS_Store
