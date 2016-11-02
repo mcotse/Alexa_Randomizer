@@ -41,24 +41,22 @@ Chooser.prototype.intentHandlers = {
     // register custom intent handlers
     "ChooseName": function (intent, session, response) {
         var winnerRes;
-        if("value" in intent.slots.Name_one && "value" in intent.slots.Name_two){
-            var name1 = intent.slots.Name_one.value,
-                name2 = intent.slots.Name_two.value
-        } else {
-            var name1 = 'anthony',
-                name2 = 'matthew'
+        var names = [];
+        for (var name in intent.slots){
+            if("value" in intent.slots[name]){
+                names.push(intent.slots[name].value);
+            }
         }
-
-        if (Math.random() > 0.5){
-            winnerRes = name1;
+        //default to anthony and matt if none provided
+        if (names.length == 0){
+            names.push("matthew");
+            names.push("anthony");
         }
-        else{
-            winnerRes = name2;
-        }
-        response.tellWithCard(winnerRes);
+        var randomIndex = Math.floor(Math.random() * names.length)
+        response.tellWithCard(names[randomIndex]);
     },
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("You can say hello to me!", "You can say hello to me!");
+        response.ask("Give me some names and I'll decide who wins!");
     }
 };
 
